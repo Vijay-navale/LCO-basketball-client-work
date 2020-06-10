@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgba(255, 0, 255, 0.3); */
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* common styles */
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 0 15px;
+}
+
+.title {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.span {
+    color: crimson;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+.square {
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.lines {
+    line-height: 8px;
+    margin-top: 35px;
+}
+
+.line1 {
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    display: inline-block;
+}
+
+.line2 {
+    width: 40px;
+    height: 1px;
+    background-color: orange;
+    display: inline-block;
+}
+
+.line3 {
+    width: 80px;
+    height: 1px;
+    background-color: orange;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* end common styles */
+
+/* nav section */
+.nav-img {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1600;
+    cursor: pointer;
+}
+
+.nav {
+    position: fixed;
+    z-index: 1499;
+    right: -500px;
+    top: 0;
+    background-color: rgba(62, 22, 75, 0.8);
+    height: 100%;
+    width: 350px;
+    transition: 0.5s;
+
+}
+
+.nav-out {
+    right: 0;
+}
+
+.nav-word {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-top: 12px;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid orange;
+    transition: background-color 0.3s;
+}
+
+.nav-word:hover {
+    color: black;
+    background-color: orange;
+}
+
+.nav-sign-in {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-top: 12px;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid orange;
+    /* z-index: 2000; */
+    color: black;
+    background-color: orange;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+/*end of nav section */
+
+
+/* logo */
+.logo {
+    position: absolute;
+    z-index: 1500;
+    top: 15px;
+    left: 30px;
+}
+
+.tournament-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.tournament-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/*end of logo */
+/* header section */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./Assets/header-background-img.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.header::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.header .container {
+
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 0 15px;
+    /* background-color: yellow; */
+    width: 100%;
+    text-align: center;
+    line-height: 4.5rem;
+}
+
+.header .title {
+    display: block;
+    font-size: 7rem;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+
+.header .sub-title {
+    display: block;
+    color: rgb(250, 247, 237);
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Courgette', cursive;
+}
+
+.header .btn {
+    color: rgb(248, 244, 231);
+    padding: 1px 40px;
+    font-size: 2rem;
+    border: 1.5px solid orange;
+    border-radius: 2rem;
+    transition: color 0.3s;
+    background-color: orange;
+
+}
+
+.header .btn:hover {
+    color: black;
+}
+
+/*end of header section */
+
+/* about section */
+.about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid white;
+    box-shadow: 5px 10px 15px orange;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.about-text {
+
+    flex-basis: 50%;
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+
+}
+
+.about-title {
+    font-size: 2rem;
+    color: crimson;
+
+}
+
+.about-paragraph {
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+.about .about-img {
+    height: 500px;
+    width: 500px;
+    flex-basis: 50%;
+    position: relative;
+}
+
+.about-img::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.2;
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-btn {
+    display: inline-block;
+    margin: 1.5rem 0rem;
+    padding: 1rem 4rem;
+    color: black;
+    border: 1.5px solid orange;
+    border-radius: 2rem;
+    transition: background-color 0.3s;
+    font-weight: 900;
+}
+
+.about-btn:hover {
+    background-color: orange;
+    color: white
+}
+
+/*end of about section */
+
+
+/* tournament section */
+
+.tournament {
+    background: url(./Assets/img3.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: white;
+}
+
+.tournament::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.tour-text {
+    text-align: center;
+}
+
+.tour-paragraph {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.subtitle {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-family: cursive;
+    max-width: 400px;
+}
+
+.tour-category {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.men-category {
+    flex-basis: 40%;
+    width: 300px;
+    height: 300px;
+    background: url(./Assets/img4.png) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+    box-shadow: 5px 10px 16px #ed958a;
+
+
+}
+
+.men-category::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+
+.men {
+    color: #fff;
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+
+.tour-btn {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 1.5px solid orange;
+    border-radius: 2rem;
+    transition: background-color 0.3s;
+
+}
+
+.tour-btn:hover {
+    background-color: orange;
+}
+
+.women-category {
+    flex-basis: 40%;
+    width: 300px;
+    height: 300px;
+    background: url(./Assets/woman-in-blue-and-white-basketball-jersey-holding-brown-159607.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+    box-shadow: 5px 10px 16px #ed958a;
+
+
+}
+
+.women-category::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/*end of tournament section */
+
+
+
+/* team section */
+.team-heading {
+    text-align: center;
+}
+
+.team-div-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-player {
+    flex-basis: 30%;
+    text-align: center;
+    margin: 2rem 2rem;
+    box-shadow: 5px 10px 15px orange;
+    border: 2px solid #deab5f;
+}
+
+
+.player-img {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.player-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.player-name {
+    font-size: 2rem;
+    font-weight: 811;
+    text-align: start;
+    display: block;
+
+}
+
+.player-paragraph {
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin: 1rem auto;
+    text-align: start;
+    color: black;
+}
+
+.player-social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4e5750;
+
+}
+
+.sm-link {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+    transition: background-color 0.3s;
+}
+
+.sm-link:hover {
+    background-color: orange;
+}
+
+.team-div-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-player-div2 {
+    flex-basis: 30%;
+    margin: 2rem 2rem;
+    box-shadow: 5px 10px 15px orange;
+}
+
+/*end of team section */
+
+/* faq section */
+.faq-container {
+    box-shadow: 5px 10px 16px #a1827f;
+    padding: 3rem 0;
+}
+
+.faq-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.faq-div-content {
+    flex-basis: 40%;
+    box-shadow: 5px 10px 16px #ed958a;
+    margin: 0.7rem 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.faq-question {
+    color: crimson;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.faq-answer {
+    color: black;
+}
+
+.faq-span {
+    color: black;
+    margin-right: 5px;
+}
+
+/*end of faq section */
+
+
+/* contact section */
+.contact {
+    background-color: #333945;
+}
+
+.contact-content {
+    color: white;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.contact-logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-text-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-head {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.contact-text {
+    margin-top: 0.8rem;
+}
+
+.contact-paragraph {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-sm-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.contact-sm {
+    margin: 0.5rem 1rem;
+}
+
+/*end of contact section */
+
+
+/* media query */
+
+
+/* media query for tablet */
+
+@media only screen and (max-width: 770px) {
+    .nav-img img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo {
+        position: fixed;
+    }
+
+    .tournament-logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /*end of header */
+
+    /* about */
+    .about-text {
+        flex-basis: 100%;
+    }
+
+    .about .about-img {
+        flex-basis: 100%;
+
+    }
+
+    /*end of about */
+
+    /* tournament */
+    .men-category {
+        flex-basis: 70%;
+        margin-bottom: 2rem;
+    }
+
+    .women-category {
+        flex-basis: 70%;
+    }
+
+    /*end of tournament */
+
+    /* team */
+    .team-player,
+    .team-player-div2 {
+        flex-basis: 70%;
+    }
+
+    /*end of team */
+
+    /* faq  */
+    .faq-div-content {
+        flex-basis: 100%;
+    }
+
+    /*end of faq  */
+
+
+}
+
+/*end of media query for tablet */
+
+
+/* media query for mobile */
+@media only screen and (max-width: 500px) {
+    section {
+        width: 100vh;
+    }
+
+    .header {
+        width: 100vh;
+    }
+
+    .header .sub-title {
+        line-height: 3rem;
+        padding-top: 1rem;
+    }
+}
+
+/*END OF media query for mobile */
+/*end of media query */
